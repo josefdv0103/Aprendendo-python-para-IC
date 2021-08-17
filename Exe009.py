@@ -94,26 +94,53 @@
 #print('Progressão finalizada com {} termos mostrados'.format(z + 10))
 
 #Fibonacci
-print(20*'-=', '\nSequência de Fibonacci\n', 20*'-=')
-q = int(input(('Quantos termos você quer mostrar?')))
-n = 0
-x = 0
-f1 = 0
-f2 = 1
-while x <= q:
-    if x == 0:
-        print('{} -> '.format(f1+f2), end='')
-    elif x == 1: 
-        print('{} -> '.format(f1+f2), end='')
-    elif x == 2:
-        f1 += 1
-        print('{} -> '.format(f1+f2), end='')
-    elif x == 3:
-        f2 += 1
-        print('{} -> '.format(f1+f2), end='')
-    else:
-        f1 += f1
-        f2 += f2
-        print('{} -> '.format(f1+f2), end='')
-    x += 1
-print('FIM')
+#print(20*'-=', '\nSequência de Fibonacci\n', 20*'-=')
+#q = int(input(('Quantos termos você quer mostrar?')))
+#x = 0
+#f1 = 1
+#f2 = 1
+#s = 0
+#while x <= q:
+#    if x == 0:
+#        print('{} -> '.format(f1-1))
+#    elif x == 1:
+#        print('{} -> '.format(f1))
+#    elif x == 2: 
+#        print('{} -> '.format(f1))
+#    elif x == 3:
+#        s = f1 +  f2
+#        f1 = f2
+#        print('{} -> '.format(s))
+#    else:
+#        s = s + f2
+#        f2 = s - f2
+#        print('{} -> '.format(s))
+#    x += 1
+#print('FIM')
+
+#Gambiarra do flag
+#s = x = n = 0
+#x = int(input('Digite um número [999 para parar]: '))
+#while x != 999:
+#    n += 1
+#    s += x
+#    x = int(input('Digite um número [999 para parar]: '))
+#print('Você digitou {} números e a soma entre eles foi {} '.format(n, s))
+
+
+#l = ''
+#n = s = c = 0
+#while l != 'N':
+#    n = int(input('Digite um número: '))
+#    l = str(input('Quer continuar? [S/N]')).upper().strip()[0]
+#    if c == 0:
+#        menor = maior = n
+#    elif c != 0 and n > maior:
+#        maior = n
+#    elif c != 0 and n < menor:
+#        menor = n
+#    s += n
+#    c += 1
+#m = s/c
+#print('''Você digitou {} números e a média foi {}
+#O maior valor foi {} e o menor foi {}'''.format(c, m, maior, menor))
