@@ -144,3 +144,4 @@
 #m = s/c
 #print('''Você digitou {} números e a média foi {}
 #O maior valor foi {} e o menor foi {}'''.format(c, m, maior, menor))
+
