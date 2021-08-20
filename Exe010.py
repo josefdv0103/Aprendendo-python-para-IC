@@ -116,11 +116,29 @@
 #Temos {t} produtos custando mais de R$ 1000,00
 #O produto mais barato foi {b} que custa R$ {menor:.2f}''')
 
-print(20*'=')
-print('BANCO CEV')
-print(20*'=')
+from math import floor
+print(50*'=')
+print('BANCO NU')
+print(50*'=')
 while True:
-    float(input('Quevalor você quer? '))
-    float(input('Total de 35 cédulas de R$ 50 '))
-    float(input('Total de 1 células de R$ 10 '))
-    float(input('Total de 5 cédulas de R$ 1 '))
+    v = int(input('Que valor você quer? '))
+    if v / 50 > 0:
+        print(f'Total de {floor(v / 50)} cédulas de R$ 50 ')
+        v = v - floor((v / 50))*50
+    if v >= 20:
+        print(f'Total de {floor(v / 20)} cédulas de R$ 20 ')
+        v = v - floor((v/20)) * 20
+    if v >= 10:
+        print(f'Total de {floor(v / 10)} cédulas de R$ 10')
+        v = v - floor(v/10)*10
+    if v >= 5:
+        print(f'Total de {floor(v / 5)} cédulas de R$ 5 ')
+        v = v - floor(v/5)*5
+    if v >= 1:
+        print(f'Total de {v:.0f} células de R$ 1')
+    break
+print(50*'=')
+print('Volte sempre no Banco Nu')
+
+import numpy as np
+
