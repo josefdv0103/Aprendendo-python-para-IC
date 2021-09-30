@@ -140,5 +140,4 @@ while True:
 print(50*'=')
 print('Volte sempre no Banco Nu')
 
-import numpy as np
-
+import 
